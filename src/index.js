@@ -1,9 +1,234 @@
 
 const $ = require('jquery');
-const buildings = require('./buildings.js');
+const buildings = require('./buildings.js').buildings;
 import * as PIXI from 'pixi.js';
 
+function credits(container) {
+    const creds = [];     
+    
+    creds.push({
+        title: 'Liberated Pixel Cup Tileset',
+        href: 'https://opengameart.org/content/lpc-tile-atlas',
+        license: 'CC-BY-SA 3.0 and GNU GPL 3.0',
+        folders: ['tiles', 'tilesSrc']
+    });
+
+    creds.push({
+        title: "Nicu's Clipart Collection",
+        href: 'http://clipart.nicubunu.ro/?gallery=rpg_map',
+        license: 'Public Domain',
+        folders: 'rpg_map'
+    });
+
+    creds.push({
+        title: '64x128 Isometric Tiles: Grassland Seasons',
+        href: 'https://opengameart.org/content/64x128-isometric-tiles-grassland-seasons',
+        license: 'CC-BY-SA 4.0',
+        folders: ['64x128-isometric-tiles-grassland-seasons']
+    });
+
+    creds.push({
+        title: 'Match 3 Tiles',
+        href: 'https://opengameart.org/content/match-3-tiles',
+        license: 'Public Domain',
+        folders: ['match-3-tiles']
+    });
+
+    creds.push({
+        title: 'Isometric Dungeon Tiles (60+)',
+        href: 'https://opengameart.org/content/isometric-dungeon-tiles-60',
+        license: 'Public Domain',
+        folders: ['isometric-dungeon-tiles-60']
+    });
+
+    creds.push({
+        title: 'Painted Iso Roguelike Tiles',
+        href: 'https://opengameart.org/content/painted-iso-roguelike-tiles',
+        license: 'CC-BY 3.0 and GPL 3.0 and GPL 2.0',
+        folders: ['']
+    });
+
+    creds.push({
+        title: 'Crystals',
+        href: 'https://opengameart.org/content/crystals-0',
+        license: 'Public Domain',
+        folders: ['crystals-0']
+    });
+
+    creds.push({
+        title: 'Wyrmsun CC0 - over 900 items',
+        href: 'https://opengameart.org/content/wyrmsun-cc0-over-900-items',
+        license: 'Public Domain',
+        folders: ['wyrmsun-cc0-over-900-items']
+    });
+
+    creds.push({
+        title: 'Dungeon Stairs',
+        href: 'https://opengameart.org/content/dungeon-stairs',
+        license: 'CC-BY 3.0',
+        folders: ['dungeon-stairs']
+    });
+
+    creds.push({
+        title: 'Plums',
+        href: 'https://opengameart.org/content/plums',
+        license: 'Public Domain',
+        folders: ['plums']
+    });
+
+    creds.push({
+        title: "Chestnut Trees (Yar's Tree Rework)",
+        href: 'https://opengameart.org/content/chestnut-trees-yars-tree-rework',
+        license: 'CC-BY 3.0',
+        folders: ['chestnut-trees-yars-tree-rework']
+    });
+
+    creds.push({
+        title: 'Free tilling textures pack 38',
+        href: 'https://opengameart.org/content/free-tilling-textures-pack-38',
+        license: 'Public Domain',
+        folders: ['free-tilling-textures-pack-38']
+    });
+
+    creds.push({
+        title: 'Crates',
+        href: 'https://opengameart.org/content/crates',
+        license: 'Public Domain',
+        folders: ['crates']
+    });
+
+    creds.push({
+        title: 'Stendhal Trees',
+        href: 'https://opengameart.org/content/stendhal-trees',
+        license: 'CC-BY-SA 3.0',
+        folders: ['stendhal-trees']
+    });
+
+    creds.push({
+        title: 'Large Rocks',
+        href: 'https://opengameart.org/content/large-rocks',
+        license: 'CC-BY 3.0',
+        folders: ['large-rocks']
+    });
+
+    creds.push({
+        title: 'Shining Gemstones Set #1',
+        href: 'https://opengameart.org/content/shining-gemstones-set-1',
+        license: 'Public Domain',
+        folders: ['shining-gemstones-set-1']
+    });
+
+    creds.push({
+        title: 'Whispers of Avalon: Grassland Tileset',
+        href: 'https://opengameart.org/content/whispers-of-avalon-grassland-tileset',
+        license: 'CC-BY 3.0 and GPL 3.0 and GPL 2.0',
+        folders: ['whispers-of-avalon-grassland-tileset']
+    });
+
+    creds.push({
+        title: 'Dungeon Crawl Selected Upscale',
+        href: 'https://opengameart.org/content/dungeon-crawl-selected-upscale',
+        license: 'Public Domain',
+        folders: ['dungeon-crawl-selected-upscale']
+    });
+
+    creds.push({
+        title: 'denzis-96x96-and-64x64-isometric-tilesets',
+        href: 'https://opengameart.org/content/denzis-96x96-and-64x64-isometric-tilesets',
+        license: 'CC-BY-SA 3.0',
+        folders: ['denzis-96x96-and-64x64-isometric-tilesets']
+    });
+
+    creds.push({
+        title: 'Isometric Groundtile "Library"',
+        href: 'https://opengameart.org/content/isometric-groundtile-library',
+        license: 'CC-BY 3.0',
+        folders: ['isometric-groundtile-library']
+    });
+
+    creds.push({
+        title: 'Isometric Wood Fences',
+        href: 'https://opengameart.org/content/isometric-wood-fences',
+        license: 'CC-BY 4.0',
+        folders: ['isometric-wood-fences']
+    });
+
+    creds.push({
+        title: 'Breakout (Brick Breaker) Tile Set - Free',
+        href: 'https://opengameart.org/content/breakout-brick-breaker-tile-set-free',
+        license: 'Public Domain',
+        folders: ['breakout-brick-breaker-tile-set-free']
+    });
+
+    creds.push({
+        title: 'more isometric parts',
+        href: 'https://opengameart.org/content/more-isometric-parts',
+        license: 'Public Domain',
+        folders: ['more-isometric-parts']
+    });
+
+    creds.push({
+        title: 'Free isometric plants-pack',
+        href: 'https://opengameart.org/content/free-isometric-plants-pack',
+        license: 'Public Domain',
+        folders: ['free-isometric-plants-pack']
+    });
+
+    creds.push({
+        title: 'Fantasy characters',
+        href: 'https://opengameart.org/content/fantasy-characters',
+        license: 'GPL 3.0',
+        folders: ['fantasy-characters']
+    });
+
+    creds.push({
+        title: 'Melee weapons',
+        href: 'https://opengameart.org/content/melee-weapons',
+        license: 'GPL 3.0 and GPL 2.0 and Public Domain',
+        folders: ['melee-weapons']
+    });
+
+    creds.push({
+        title: 'Pixel Weapons',
+        href: 'https://opengameart.org/content/pixel-weapons-1',
+        license: 'CC-BY 4.0 and CC-BY 3.0 and GPL 3.0',
+        folders: ['pixel-weapons-1']
+    });
+
+    creds.push({
+        title: 'Elemental Weapons - Effect',
+        href: 'https://opengameart.org/content/elemental-weapons-effect',
+        license: 'Public Domain',
+        folders: ['elemental-weapons-effect']
+    });
+
+    creds.push({
+        title: '',
+        href: '',
+        license: '',
+        folders: ['']
+    });
+
+    creds.push({
+        title: '',
+        href: '',
+        license: '',
+        folders: ['']
+    });
+
+    // TODO: https://opengameart.org/users/kjellgranlund
+
+    container.append("<h1>Art Credits</h1>");
+    for (let i = 0; i < creds.length; i++) {
+        const cred = creds[i];
+        container.append("<p><a href=" + cred.href + ">" + cred.title + "</a>" + ": " + cred.license + "</p>");
+    }
+}
+
 function main() {
+
+$("body").css("margin", "0px");
+$("body").css("padding", "0px");
 
 const width = 1024;
 const height = 1024;
@@ -79,7 +304,11 @@ function loadSprite(fname) {
 // Test
 container.addChild(loadSprite('atlas/rpg_map/circus.svg'));
 for (let i = 0; i < buildings.length; i++) {
-    const sprite = loadSprite(buildings[i]);
+    //console.log("building", buildings[i]);
+    if (buildings[i].search('outline') >= 0) {
+        continue;
+    }
+    const sprite = loadSprite("atlas/rpg_map/" + buildings[i]);
     container.addChild(sprite);
     sprite.x = Math.random() * (container.width - sprite.width);
     sprite.y = Math.random() * (container.height - sprite.height);
@@ -184,6 +413,8 @@ const pickupMinerals = function() {
     }
 }
 setInterval(pickupMinerals, 10);
+
+credits($("body"));
 
 }
 
