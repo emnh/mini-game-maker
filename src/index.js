@@ -1,5 +1,7 @@
 
+const $ = require('jquery');
 const buildings = require('./buildings.js');
+import * as PIXI from 'pixi.js';
 
 function main() {
 
