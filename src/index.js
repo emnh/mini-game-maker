@@ -1,3 +1,6 @@
+
+const buildings = require('./buildings.js');
+
 function main() {
 
 const width = 1024;
@@ -73,6 +76,12 @@ function loadSprite(fname) {
 
 // Test
 container.addChild(loadSprite('atlas/rpg_map/circus.svg'));
+for (let i = 0; i < buildings.length; i++) {
+    const sprite = loadSprite(buildings[i]);
+    container.addChild(sprite);
+    sprite.x = Math.random() * (container.width - sprite.width);
+    sprite.y = Math.random() * (container.height - sprite.height);
+}
 
 // Listen for animate update
 app.ticker.add((delta) => {

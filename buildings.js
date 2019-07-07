@@ -1,4 +1,4 @@
-const buildings = `arch.svg
+export const buildings = `arch.svg
 arch_outline.svg
 batchsvgtopng
 blacksmith.svg
