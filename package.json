@@ -7,8 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --hot"
   },
-  "author": "",
-  "license": "ISC",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/emnh/mini-game-maker"
+  },
+  "author": "Eivind Magnus Hvidevold",
+  "license": "MIT",
   "dependencies": {
     "jquery": "^3.4.1",
     "pixi.js": "^5.0.4",
