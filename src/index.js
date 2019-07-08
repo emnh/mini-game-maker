@@ -203,20 +203,78 @@ function credits(container) {
     });
 
     creds.push({
-        title: '',
-        href: '',
-        license: '',
-        folders: ['']
+        title: "Cethiel's Weapons 3D",
+        href: 'https://opengameart.org/content/cethiels-weapons-3d',
+        license: 'Public Domain',
+        folders: ['cethiels-weapons-3d']
+    });
+    
+    creds.push({
+        title: 'Super Epic Weapons Fantasy Pack FREE',
+        href: 'https://opengameart.org/content/super-epic-weapons-fantasy-pack-free',
+        license: 'Public Domain',
+        folders: ['super-epic-weapons-fantasy-pack-free']
     });
 
+    creds.push({
+        title: 'Weapons Icon Pack',
+        href: 'https://opengameart.org/content/weapons-icon-pack',
+        license: 'Public Domain',
+        folders: ['weapons-icon-pack']
+    });
+
+    creds.push({
+        title: 'WEAPONS ICONS - SWORDS AND SHIELDS',
+        href: 'https://opengameart.org/content/weapons-icons-swords-and-shields',
+        license: 'CC-BY 4.0 and CC-BY 3.0 and CC-BY-SA 4.0 and CC-BY-SA 3.0',
+        folders: ['weapons-icons-swords-and-shields']
+    });
+
+    creds.push({
+        title: 'Swords - Set 5',
+        href: 'https://opengameart.org/content/swords-set-5',
+        license: 'Public Domain',
+        folders: ['swords-set-5']
+    });
+
+    creds.push({
+        title: 'Magic Staffs - Set 1',
+        href: 'https://opengameart.org/content/magic-staffs-set-1',
+        license: 'Public Domain',
+        folders: ['magic-staffs-set-1']
+    });
+
+    creds.push({
+        title: 'Shields - Set 2',
+        href: 'https://opengameart.org/content/shields-set-2',
+        license: 'Public Domain',
+        folders: ['shields-set-2']
+    });
+
+    creds.push({
+        title: 'Axes - Set 1',
+        href: 'https://opengameart.org/content/axes-set-1',
+        license: 'Public Domain',
+        folders: ['axes-set-1']
+    });
+
+    /*
     creds.push({
         title: '',
         href: '',
         license: '',
         folders: ['']
     });
+    */
 
     // TODO: https://opengameart.org/users/kjellgranlund
+    // TODO: https://opengameart.org/content/dragon-fully-animated
+    // TODO: https://opengameart.org/users/cethiel
+    // TODO: https://opengameart.org/content/roguelike-tiles-large-collection
+    // TODO: https://opengameart.org/content/flame-ice-sword-and-mace
+    // TODO: https://opengameart.org/content/flame-ice-axe
+    // TODO: https://opengameart.org/content/lasers-and-beams
+    // TODO: https://opengameart.org/content/modified-and-cliped-magic-skill-item-icons
 
     container.append("<h1>Art Credits</h1>");
     for (let i = 0; i < creds.length; i++) {
