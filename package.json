@@ -14,7 +14,7 @@
   "author": "Eivind Magnus Hvidevold",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "pixi.js": "^5.0.4",
     "webpack": "^4.35.2",
     "webpack-cli": "^3.3.5",
